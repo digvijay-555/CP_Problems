@@ -1,0 +1,1 @@
+{"name":"Local: knapsack_01_recursive","url":"d:\\CP\\DP\\knapsack_01_recursive.cpp","tests":[{"id":1721395111784,"input":"1\n4 8\n1 3 4 5\n2 7 4 2","output":"13"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP\\DP\\knapsack_01_recursive.cpp","group":"local","local":true}

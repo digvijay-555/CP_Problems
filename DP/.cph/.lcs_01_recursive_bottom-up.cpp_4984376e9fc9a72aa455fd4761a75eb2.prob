@@ -1,0 +1,1 @@
+{"name":"Local: lcs_01_recursive_bottom-up","url":"d:\\CP\\DP\\lcs_01_recursive_bottom-up.cpp","tests":[{"id":1721645526271,"input":"1\nabcdfgse\nbcddfs","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP\\DP\\lcs_01_recursive_bottom-up.cpp","group":"local","local":true}

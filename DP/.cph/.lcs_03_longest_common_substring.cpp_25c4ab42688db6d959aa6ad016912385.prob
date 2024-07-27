@@ -1,0 +1,1 @@
+{"name":"Local: lcs_03_longest_common_substring","url":"d:\\CP\\DP\\lcs_03_longest_common_substring.cpp","tests":[{"id":1721647827451,"input":"1\nascbdejg\nascdejg","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP\\DP\\lcs_03_longest_common_substring.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: lcs_04_print_lcs","url":"d:\\CP\\DP\\lcs_04_print_lcs.cpp","tests":[{"id":1721650218257,"input":"1\nhelloworld\nhewrlod","output":"hewrld"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP\\DP\\lcs_04_print_lcs.cpp","group":"local","local":true}

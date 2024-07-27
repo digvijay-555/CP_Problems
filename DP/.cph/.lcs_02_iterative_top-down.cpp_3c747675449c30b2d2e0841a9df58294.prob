@@ -1,0 +1,1 @@
+{"name":"Local: lcs_02_iterative_top-down","url":"d:\\CP\\DP\\lcs_02_iterative_top-down.cpp","tests":[{"id":1721647299043,"input":"1\nabcdfgse\nbcddfs","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP\\DP\\lcs_02_iterative_top-down.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: knapsack_06_minimum_subset_sum_difference","url":"d:\\CP\\DP\\knapsack_06_minimum_subset_sum_difference.cpp","tests":[{"id":1721465634502,"input":"1\n4\n1 5 6 3","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP\\DP\\knapsack_06_minimum_subset_sum_difference.cpp","group":"local","local":true}

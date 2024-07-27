@@ -1,0 +1,1 @@
+{"name":"Local: knapsack_07_count_subset_sum_diff","url":"d:\\CP\\DP\\knapsack_07_count_subset_sum_diff.cpp","tests":[{"id":1721468505456,"input":"1\n5 2 \n2 3 4 6 7","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP\\DP\\knapsack_07_count_subset_sum_diff.cpp","group":"local","local":true}
