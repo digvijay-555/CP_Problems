@@ -15,22 +15,24 @@ int main(){
         }
         ll i = 0, j = n - 1;
         ll tt = 0;
-        ll sumLeft = 0, sumRight = 0;
-        while (i <= j) {
+        ll sumLeft = a[0], sumRight = a[n-1];
+        while (i < j) {
             if (sumLeft < sumRight) {
-                sumLeft += a[i];
                 i++;
+                sumLeft += a[i];
             } 
             else if (sumLeft == sumRight) {
-                tt = i + (n - j - 1);
-                sumLeft+=a[i];
-                sumRight+=a[j];
+                tt = max(tt, i + (n - j + 1));
+                
                 i++;
                 j--;
+
+                sumLeft+=a[i];
+                sumRight+=a[j];
             }
             else {
-                sumRight += a[j];
                 j--;
+                sumRight += a[j];
             }
             
         }
