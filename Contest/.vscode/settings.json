@@ -20,6 +20,7 @@
         "stacktrace": "cpp",
         "regex": "cpp",
         "ostream": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "bitset": "cpp"
     }
 }
