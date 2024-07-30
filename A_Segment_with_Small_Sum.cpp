@@ -15,8 +15,8 @@ int main(){
         }
         ll i = 0, j = 0, curSum = 0, mxl = 0;
         while(j<n){
+            mxl=max(mxl, j-i+1);
             if(curSum<=s){
-                mxl=max(mxl, j-i+1);
                 curSum+=a[j];
                 j++;
             }
@@ -25,5 +25,6 @@ int main(){
                 i++;
             }
         }
+        cout<<
     }
 }
