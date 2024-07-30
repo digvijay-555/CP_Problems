@@ -1,34 +1,49 @@
 #include <bits/stdc++.h>
-#define ll long long int
 using namespace std;
 
-int main() {
-    ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-    ll t = 1;
-    cin >> t;
-    while (t--) {
-        ll n, k;
-        cin >> n >> k;
-        ll ct = 0; // Start count at 0
-        ll remaining_n = n;
+#define ll long long
+#define int long long
+#define all(v) v.begin(), v.end()
+#define cin_input(a) int n; cin >> n; vector<int> a(n); for (int i = 0; i < n; i++) { cin >> a[i]; }
+#define nl cout << "\n";
+#define co(a) { cout << a << ' '; }
+#define cou(a) { cout << a << "\n"; }
+#define lcou(v) { for (auto& x : v) co(x); nl }
+#define cy(x) { if (x) cou("YES") else cou("NO") }
 
-        while (k > 0) {
-            // Try to distribute k evenly among remaining_n items
-            k -= remaining_n;
+const int M = 1e9 + 7;
+const int MAX_N = 500001;
 
-            // Each round of distribution is counted
-            ct++;
-
-            // If k is still positive, distribute k again after removing one item
-            if (k > 0) {
-                k -= remaining_n;
-                ct++;
-            }
-
-            // Decrement the number of items left for the next round
-            remaining_n--;
+void solve() {
+    cin_input(a)
+    ll ok = 1;
+    for (int i = 1; i < n; i++) {
+        if ((a[i] - a[0]) & 1) {
+            cou(-1)
+            return;
         }
-        if(k==0) cout<<0<<endl;
-        cout << ct << endl;
     }
+    cou(39)
+    for (int i = 0; i < 39; i++) {
+        ll mn = *min_element(all(a));
+        ll mx = *max_element(all(a));
+        ll mid = mn + (mx - mn) / 2;
+        co(mid)
+        for (auto& aa : a) {
+            aa = abs(aa - mid);
+        }
+    }
+    nl
+}
+
+signed main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int TC;
+    cin >> TC;
+    while (TC--) {
+        solve();
+    }
+    return 0;
 }
