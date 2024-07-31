@@ -9,23 +9,27 @@ int main(){
     while(t--){
         ll n, s;
         cin>>n>>s;
+
         ll a[n];
         for(ll i = 0; i<n; i++){
             cin>>a[i];
         }
-        ll i = 0, j = 0, curSum = 0, mxl = 0;
+        ll ct=0;
+        ll curSum=0;
+        ll i = 0, j = 0;
         while(j<=n){
-            //mxl=max(mxl, j-i+1);
-            if(curSum<=s){
-                mxl=max(mxl, j-i);
+            if(curSum<s){
                 curSum+=a[j];
                 j++;
             }
             else{
+                ct+=n-j+1;
                 curSum-=a[i];
                 i++;
             }
+            
         }
-        cout<<mxl;
+        cout<<ct<<endl;
+
     }
 }

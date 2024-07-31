@@ -7,25 +7,23 @@ int main(){
     ll t = 1;
     //cin>>t;
     while(t--){
-        ll n, s;
-        cin>>n>>s;
+        ll n;
+        cin>>n;
         ll a[n];
         for(ll i = 0; i<n; i++){
             cin>>a[i];
         }
-        ll i = 0, j = 0, curSum = 0, mxl = 0;
-        while(j<=n){
-            //mxl=max(mxl, j-i+1);
-            if(curSum<=s){
-                mxl=max(mxl, j-i);
-                curSum+=a[j];
-                j++;
-            }
-            else{
-                curSum-=a[i];
+        sort(a, a+n);
+        ll i = 0, j = 1, mx = 1;
+        while(j<n){
+            if(a[j]-a[i]>5){
                 i++;
             }
+            else{
+                mx=max(mx, j-i+1);
+                j++;
+            }
         }
-        cout<<mxl;
+        cout<<mx<<endl;
     }
 }
