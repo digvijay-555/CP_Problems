@@ -1,21 +1,24 @@
-#include<bits/stdc++.h>
-#define ll long long int
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-    ios::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
-    ll t = 1;
-    //cin>>t;
-    while(t--){
-        float l, r, x, y, k;
-        cin>>l>>r>>x>>y>>k;
+#define ll long long
 
-        ll p = ceil(l/y);
-        ll q = floor(r/x);
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
 
-        if(p<=k && q>=k){
-            cout<<"YES"<<endl;
+    double l,r,x,y,k;
+    cin >> l >> r >> x >> y >> k;
+    
+    string res = "NO";
+    for(int i = x; i <= y; i++) {
+        if(i*k >= l && i*k <= r){
+            res = "YES";
+            break;
         }
-        else cout<<"NO"<<endl;
     }
+    
+    cout << res << endl;
+
+    return 0;
 }
