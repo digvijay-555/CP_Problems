@@ -34,6 +34,7 @@ int main() {
                 i++;
                 j--;
             } else if (prefix_from_start[i] < prefix_from_end[j]) {
+            
                 i++;
             } else {
                 j--;
