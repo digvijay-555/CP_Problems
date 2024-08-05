@@ -1,0 +1,1 @@
+{"name":"Local: no_of_connected_components","url":"d:\\CP\\Graphs\\Trees\\no_of_connected_components.cpp","tests":[{"id":1722746690799,"input":"8 5\n1 2\n2 3\n2 4\n4 3\n5 7","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP\\Graphs\\Trees\\no_of_connected_components.cpp","group":"local","local":true}
